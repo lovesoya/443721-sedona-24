@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Welcome to Sedona</title>
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +12,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels">Гостиницы</a></li>
+          <li><a href="catalogue.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +32,25 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,<br>
           И мы покажем вам лучшие предложения гостниц в Седоне</p>
-        <!--hotel form-->
+        <form class="booking" action="https:/echo.htmlacademy.ru" method="post">
+          <p class="booking-item">
+            <label for="booking-checkin">Дата заезда</label>
+            <input id="booking-checkin" type="text" name="checkin" value="24 апреля 2017">
+          </p>
+          <p class="booking-item">
+            <label for="booking-checkout">Дата выезда</label>
+            <input id="booking-checkout" type="text" name="checkout" value="4 июля 2017">
+          </p>
+          <p class="booking-item">
+            <label for="adults">Взрослые</label>
+            <input id="adults" type="number" name="adults" value="2" min="1" max="100" size="1">
+          </p>
+          <p class="booking-item">
+            <label for="children">Дети</label>
+            <input id="children" type="number" name="children" value="0" min="0" max="100" size="1">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
       <!--map-->
     </main>
@@ -40,20 +58,14 @@
       <b>#VISITSEDONA</b>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="twitter.com/sedona"><span class="social social-twitter">Twitter</span></a></li>
-          <li><a class="social-button" href="fb.com/sedona"><span class="social social-fb">Facebook</span></a></li>
-          <li><a class="social-button" href="youtube.com/sedona"><span class="social social-youtube">Youtube</span></a></li>
+          <li><a class="social-button" href="twitter.com/sedona"><span class="social social-twitter">Sedona in Twitter</span></a></li>
+          <li><a class="social-button" href="fb.com/sedona"><span class="social social-fb">Sedona on Facebook</span></a></li>
+          <li><a class="social-button" href="youtube.com/sedona"><span class="social social-youtube">Sedona on Youtube</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>Website by</b> <a class="button" href="htmlacademy.ru"><img src="img/logo_academy.svg"</a>
+        <b>Website by</b><a class="button" href="htmlacademy.ru"><img src="img/logo_academy.svg" width="50" height="20" alt="Логотип HTML Academy"></a>
       </p>
     </footer>
-
-    <section class="modal modal-hotelsearch">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <!--hotel form-->
-      <a class="button" href="#">Найти</a>
-    </section>
   </body>
 </html>
