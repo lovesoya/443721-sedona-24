@@ -1,20 +1,16 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -25,7 +21,8 @@ a {
   margin: -1px;
 }
 
-.button {
+ .button-search,
+ .button-searchgo {
   font: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -35,12 +32,55 @@ a {
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
+  cursor: pointer;
 }
 
-.social-button:hover,
-.social-butto:active {
-  background-color: #000000;
-  border: 4px double #000000;
+.button-search:hover {
+  background-color: #604e43;
+}
+
+.button-search:active{
+  background-color: #604e43;
+  color: #928a85;
+}
+
+.button-searchgo:hover {
+  background-color: #669ec0;
+}
+
+.button-searchgo:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.button.button-info:hover {
+  background-color: #669ec0;
+}
+
+.button.button-info:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.button.book:hover {
+  background-color: #604e43;
+}
+
+.button.book:active {
+  background-color: #503e33;
+  color: #928a85;
 }
 
 .inner-page .button {
@@ -57,6 +97,26 @@ a {
 
 .button.book {
   background-color: #766357;
+}
+
+.button-search {
+  background-color: #766357;
+  color: #ffffff;
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.hotel-title {
+  color: #000000;
+}
+
+.hotel-title:hover {
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color: #cacaca;
 }
 
 .rate-num {
@@ -140,6 +200,32 @@ a {
 
 .stars {
   list-style: none;
+}
+
+#booking-checkin,
+#booking-checkout,
+#adults,
+#children {
+  background-color: #f2f2f2;
+}
+
+#booking-checkin,
+#booking-checkout,
+#adults,
+#children:hover {
+  background-color: #ebebeb;
+}
+
+#booking-checkin,
+#booking-checkout,
+#adults,
+#children:active {
+  background-color: #ffffff;
+  border: 1px bolid #e5e5e5;
+}
+
+.developer {
+  color: 231f20;
 }
 
 .main-footer {
