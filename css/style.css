@@ -313,7 +313,6 @@ a {
   height: 23px;
   cursor: pointer;
 }
-
 .checkbox::before {
   content: "";
   display: inline-block;
